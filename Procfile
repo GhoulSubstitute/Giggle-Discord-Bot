@@ -1,1 +1,1 @@
-worker: python giggle.py
+worker: python giggle-bot.py
