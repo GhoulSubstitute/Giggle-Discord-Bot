@@ -6,6 +6,9 @@ from discord.ext import commands
 import yt_dlp
 import asyncio
 import imageio_ffmpeg as ffmpeg
+import os
+
+TOKEN = os.getenv("TOKEN")
 
 ffmpeg_path = ffmpeg.get_ffmpeg_exe()
 intents = discord.Intents.default()
@@ -279,4 +282,4 @@ async def timeout(ctx, member: discord.Member, minutes: int, reason=None):
     await member.timeout(duration, reason=reason)
     await ctx.send(f"{member.mention} has been timed out until {minutes} minutes. Reason: {reason}")
 
-giggle.run("MTQwODcwMjk0ODc0MTIyMjQ0MQ.GkKAJx.Z5KccOq94RBjAGs4ecLtq8a6tijMmimk5BheTg")
+giggle.run(TOKEN)
