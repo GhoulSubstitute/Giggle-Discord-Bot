@@ -282,4 +282,7 @@ async def timeout(ctx, member: discord.Member, minutes: int, reason=None):
     await member.timeout(duration, reason=reason)
     await ctx.send(f"{member.mention} has been timed out until {minutes} minutes. Reason: {reason}")
 
+print("TOKEN from env:", repr(TOKEN))
+
 giggle.run(TOKEN)
+
