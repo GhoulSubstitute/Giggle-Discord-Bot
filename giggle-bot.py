@@ -16,8 +16,7 @@ intents.message_content = True
 giggle = commands.Bot(command_prefix="!", intents=intents)
 
 # ---------- QUEUE SYSTEM ----------
-queues = {}  # {guild_id: [song_dicts...]}
-
+queues = {}  
 # YTDL setup
 ytdl_format_options = {
     "format": "bestaudio/best",
